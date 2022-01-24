@@ -171,9 +171,11 @@
     bottom: 20px;
     left: 50%;
     width:500px;
-    height: 500px;
+    height: 200px;
     transform: translateX(-50%);
 " id="container-1fe1cd691be6ddffcc749d27364ea449"></div>
+    <button onclick="cli();"
+        style="position: fixed;top:0%;left:0;width:100px;height:40px;z-index:1000000000">start</button>
 
 
 
@@ -188,6 +190,22 @@
                 .then(function (blob) {
                     window.saveAs(blob, 'my-node.png');
                 });
+        }
+    </script>
+
+
+    <script>
+        function cli() {
+            document.querySelectorAll(".container-1fe1cd691be6ddffcc749d27364ea449__link")[0].click()
+            document.querySelectorAll(".container-1fe1cd691be6ddffcc749d27364ea449__link")[1].click()
+            document.querySelectorAll(".container-1fe1cd691be6ddffcc749d27364ea449__link")[2].click()
+            document.querySelectorAll(".container-1fe1cd691be6ddffcc749d27364ea449__link")[3].click()
+            document.querySelectorAll("iframe")[0].contentWindow.document.querySelector(
+                "#atLink-3cbe66e029f1d131eb099a47ab482928").click();
+            document.querySelectorAll("iframe")[1].contentWindow.document.querySelector(
+                "#atLink-99167aa70492f99f5397a3b9ce7cb0b5").click();
+            document.querySelectorAll("iframe")[2].contentWindow.document.querySelector(
+                "#atLink-99167aa70492f99f5397a3b9ce7cb0b5").click();
         }
     </script>
 
